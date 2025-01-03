@@ -87,11 +87,11 @@ data:
         /usr/bin/yq_$(uname -m) -i  '(.users.[] | select(.username=="user@kasm.local") | .pw_hash) = "'${USER_HASH}'"'  /tmp/default_properties.yaml
         
         echo "Seeding database..."
-        /usr/bin/kasm_server.so --initialize-database --cfg /opt/kasm/current/conf/app/api.app.config.yaml --populate-production --seed-file "/tmp/default_properties.yaml"
+        /usr/bin/kasm_server.so --initialize-database --cfg /opt/kasm/current/conf/app/api/api.app.config.yaml --populate-production --seed-file "/tmp/default_properties.yaml"
 
         #if [ "${POSTGRES_HOST}" == "db" ] ; then
           #echo "Setting default agent for single server installation."
-          #/usr/bin/kasm_server.so --initialize-database --cfg /opt/kasm/current/conf/app/api.app.config.yaml --populate-production --seed-file "/opt/kasm/current/conf/database/seed_data/default_agents.yaml"
+          #/usr/bin/kasm_server.so --initialize-database --cfg /opt/kasm/current/conf/app/api/api.app.config.yaml --populate-production --seed-file "/opt/kasm/current/conf/database/seed_data/default_agents.yaml"
         #fi
       else
         echo "Database already exists."
