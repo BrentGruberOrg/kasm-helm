@@ -1,0 +1,47 @@
+apiVersion: v1
+entries:
+  kasm-single-zone:
+  - annotations:
+      category: Virtual Desktop
+      images: |
+        - name: api-wait-container
+          image: alpine/curl:8.8.0
+        - name: kasm-api
+          image: kasmweb/api:1.17.0
+        - name: kasm-manager
+          image: kasmweb/manager:1.17.0
+        - name: kasm-db
+          image: kasmweb/postgres:1.17.0
+        - name: kasm-proxy
+          image: kasmweb/proxy:1.17.0
+        - name: kasm-guac
+          image: kasmweb/kasm-guac:1.17.0
+        - name: rdp-gateway
+          image: kasmweb/rdp-gateway:1.17.0
+        - name: rdp-gateway
+          image: kasmweb/rdp-https-gateway:1.17.0
+        - name: kasm-redis
+          image: redis:5-alpine
+    apiVersion: v2
+    appVersion: 1.17.0
+    created: "2025-05-14T15:37:44.686005149-04:00"
+    description: Kasm is a platform specializing in providing secure browser-based
+      workspaces for a wide range of applications and industries. Its main goal is
+      to provide isolated and secure environments that can be accessed via web browsers,
+      ensuring that users can perform tasks without risking the security of their
+      local systems.
+    digest: b99a56eb9426138ec48da6c3915d2fa1643eb7cc888c440e55ecefa3104698ec
+    home: https://kasmweb.com
+    icon: https://kasm-static-content.s3.amazonaws.com/icons/kasm-logo-small.png
+    keywords:
+    - kasm
+    - vdi
+    - workspaces
+    maintainers:
+    - name: Kasm Technologies, Inc.
+      url: https://github.com/kasmtech/kasm-helm
+    name: kasm-single-zone
+    urls:
+    - https://BrentGruberOrg.github.io/kasm-helm/charts/kasm-single-zone-1.17.0-develop.tgz
+    version: 1.17.0-develop
+generated: "2025-05-14T15:37:44.684022667-04:00"
