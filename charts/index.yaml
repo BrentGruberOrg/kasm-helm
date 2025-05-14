@@ -42,6 +42,6 @@ entries:
       url: https://github.com/kasmtech/kasm-helm
     name: kasm-single-zone
     urls:
-    - https://BrentGruberOrg.github.io/kasm-helm/charts/kasm-single-zone-1.17.0-develop.tgz
+    - https://github.com/BrentGruberOrg/kasm-helm/releases/download/Dev/kasm-single-zone-1.17.0-develop.tgz
     version: 1.17.0-develop
 generated: "2025-05-14T19:09:11.046091666-04:00"
