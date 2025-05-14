@@ -24,7 +24,7 @@ entries:
           image: redis:5-alpine
     apiVersion: v2
     appVersion: 1.17.0
-    created: "2025-05-14T18:57:32.444001512-04:00"
+    created: "2025-05-14T19:09:11.048027002-04:00"
     description: Kasm is a platform specializing in providing secure browser-based
       workspaces for a wide range of applications and industries. Its main goal is
       to provide isolated and secure environments that can be accessed via web browsers,
@@ -44,4 +44,4 @@ entries:
     urls:
     - https://BrentGruberOrg.github.io/kasm-helm/charts/kasm-single-zone-1.17.0-develop.tgz
     version: 1.17.0-develop
-generated: "2025-05-14T18:57:32.442190887-04:00"
+generated: "2025-05-14T19:09:11.046091666-04:00"
